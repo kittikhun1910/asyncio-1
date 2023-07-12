@@ -19,7 +19,7 @@ async def task_coro(arg):
 
 async def main():
     # create many task
-    tasks = [asyncio.create_task(task_coro(i)) for i in range(10000000)]
+    tasks = [asyncio.create_task(task_coro(i)) for i in range(10)]
     # wait for all tasks to complete #ALL_COMPLETED, FIRST_COMPLETED, FIRST_EXCEPTION
     done, pending = await asyncio.wait(tasks, return_when=asyncio.ALL_COMPLETED)
     # report result
