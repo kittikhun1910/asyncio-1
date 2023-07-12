@@ -16,5 +16,5 @@ async def main():
     # execute my custom coroutine
     await custom_coro()
 
-# start the corotine programs
+# start the coroutine programs
 asyncio.run(main())
